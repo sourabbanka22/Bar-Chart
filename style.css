@@ -1,0 +1,31 @@
+body {
+  margin-top: 50px;
+  background : LightGray;
+}
+
+.main{
+  text-align: center;
+  animation: addEffect 0.4s 0.75s cubic-bezier(.22,-0.3,.68,1.44) both;
+}
+
+.main #title{
+  text-transform: capitalize;
+}
+
+.bar:hover{
+  fill: green;
+}
+
+@keyframes addEffect {
+  0% {
+    transform: translateY(-20vh);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
